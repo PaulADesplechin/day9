@@ -1,0 +1,43 @@
+/* Style de base du corps */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f38181;
+}
+
+/* Conteneur pour la progress bar */
+.progress-container {
+    text-align: center;
+    width: 300px;
+}
+
+/* Style de l'input pour entrer la valeur de progression */
+#progress-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Style de la barre de progression */
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* La partie remplie de la barre de progression */
+.progress-bar-fill {
+    height: 100%;
+    width: 0;
+    background-color: #06465e;
+    transition: width 0.5s ease;
+    border-radius: 15px;
+}

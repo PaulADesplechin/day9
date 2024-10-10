@@ -1,0 +1,58 @@
+/* Style de base du corps */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f38181;
+}
+
+/* Conteneur pour le formulaire */
+.form-container {
+    width: 300px;
+}
+
+/* Style de base pour le groupe input/label */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Style de l'input */
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Style de base pour le label */
+label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #666;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+/* Lorsque l'input est en focus */
+input:focus {
+    border-color: #06465e;
+    box-shadow: 0 0 8px rgba(0, 70, 94, 0.5);
+}
+
+/* Lorsque l'input est en focus, le label change de position et de style */
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 14px;
+    color: #06465e;
+}
